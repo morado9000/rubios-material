@@ -1,24 +1,53 @@
-import logo from './logo.svg';
 import './App.css';
+import "@fontsource/libre-franklin";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Header from './components/common/Header/Header';
+import NewItem from './components/common/NewItem/NewItem';
+import SignDivider from './components/common/SignDivider/SignDivider';
+import Splash from './components/common/Splash/Splash';
+import CurrentMenu from './components/common/CurrentMenu/CurrentMenu'
+import OrderCatering from './components/common/OrderCatering/OrderCatering';
+import NewsLetter from './components/common/NewsLetter/NewsLetter';
+import JoinBox from './components/common/JoinBox/JoinBox';
+import SignUpNews from './components/common/SignUpNews/SignUpNews';
+
+const theme = createTheme({
+  typography: {
+    fontFamily: [
+      'Libre Franklin',
+      'Arial',
+      'Roboto',
+    ].join(','),
+    bold: {
+      fontSize: '14px',
+      color: "#196db6",
+      fontWeight: "1000"
+    },
+    boldInvert: {
+      fontSize: '14px',
+      color: "#FFF",
+      fontWeight: "1000"
+    },
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Header 
+        logo="https://rubios.com/wp-content/uploads/2021/12/rubios-logo-rebrand.png"
+        midLinks={["Menu", "Catering", "Rewards", "Careers", "About Us", "Nutrition"]}
+        midEndLinks={["Locations", "Sign In"]}
+        button="Order Now" />
+      <Splash />
+      <SignDivider />
+      <NewItem />
+      <CurrentMenu />
+      <OrderCatering />
+      <NewsLetter />
+      <JoinBox />
+      <SignUpNews />
+    </ThemeProvider>
   );
 }
 
