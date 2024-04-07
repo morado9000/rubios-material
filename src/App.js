@@ -10,6 +10,7 @@ import OrderCatering from './components/common/OrderCatering/OrderCatering';
 import NewsLetter from './components/common/NewsLetter/NewsLetter';
 import JoinBox from './components/common/JoinBox/JoinBox';
 import SignUpNews from './components/common/SignUpNews/SignUpNews';
+import Footer from './components/common/Footer/Footer';
 
 const theme = createTheme({
   typography: {
@@ -46,7 +47,11 @@ function App() {
       <OrderCatering />
       <NewsLetter />
       <JoinBox />
-      <SignUpNews />
+      <Footer 
+        logo="https://rubios.com/wp-content/uploads/2021/12/logo-footer.png"
+        midLinks={["Weekly Deals", "Download Menu", "Locations", "Gift Cards", "Fundraisers", "Press", "Blog", "Contact Us"]}
+        copyrightLinks={["Do Not Sell My Personal Infomation", "Website Accessibility", "Terms of Use", "Privacy", "Cookies"]}
+      />
     </ThemeProvider>
   );
 }

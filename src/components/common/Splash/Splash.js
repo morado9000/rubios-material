@@ -9,7 +9,7 @@ const Splash = () => {
         <Grid sx={splashStyle.wrapper} container>
             <Grid item xs={6}>
                 <Box>
-                    <img src="https://rubios.com/wp-content/uploads/2023/08/shrimp.png" alt="" />
+                    <img src="https://rubios.com/wp-content/uploads/2023/08/shrimp.png" alt="" style={{display: "block"}} />
                 </Box>
             </Grid>
             <Grid item xs={6}>

@@ -10,7 +10,7 @@ export default function Header({ logo, midLinks, midEndLinks, button}) {
 
     return (
         <Box>
-            <AppBar>
+            <AppBar sx={{zIndex:3000}}>
                 <Toolbar disableGutters sx={headerStyle.wrapper}>
                     <Box sx={{paddingLeft: "10%"}}>
                         <img src={logo} alt="" />

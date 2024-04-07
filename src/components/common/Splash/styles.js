@@ -4,7 +4,7 @@ export const splashStyle = {
         mt: "50px",
         display: "flex",
         flexDirection: "row",
-        alignItems: "center"
+        alignItems: "center",
     },
     cardWrapper: {
         height: "333px",

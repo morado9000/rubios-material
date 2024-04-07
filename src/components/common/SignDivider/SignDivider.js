@@ -25,7 +25,7 @@ const SignDivider = () => {
         <Box sx={dividerStyles.wrapper}>
             <Box sx={dividerStyles.innerWrapper}>
                 <Box sx={{alignSelf: "end",  zIndex:1300}}>
-                    <img src="https://rubios.com/wp-content/uploads/2022/12/rewards-new.png" alt="" />
+                    <img src="https://rubios.com/wp-content/uploads/2022/12/rewards-new.png" alt="" style={{display: "block"}}  />
                 </Box>
                 <Typography variant="h6" component="div" sx={{color: "#fcb900", width: "50%", ml: 5}}>
                     Sign Up for Rewards and Earn points for free Rubio's!
