@@ -11,6 +11,9 @@ export const menuStyles = {
       flexDirection: "row",
       justifyContent: "start",
       overflow: "scroll",
-      width: "1172px"
+      width: {
+        xs: "300px",
+        md: "1172px"
+      }
     }
   }

@@ -44,6 +44,7 @@ function App() {
       <SignDivider />
       <NewItem />
       <CurrentMenu />
+      {/*
       <OrderCatering />
       <NewsLetter />
       <JoinBox />
@@ -51,7 +52,7 @@ function App() {
         logo="https://rubios.com/wp-content/uploads/2021/12/logo-footer.png"
         midLinks={["Weekly Deals", "Download Menu", "Locations", "Gift Cards", "Fundraisers", "Press", "Blog", "Contact Us"]}
         copyrightLinks={["Do Not Sell My Personal Infomation", "Website Accessibility", "Terms of Use", "Privacy", "Cookies"]}
-      />
+  />*/}
     </ThemeProvider>
   );
 }

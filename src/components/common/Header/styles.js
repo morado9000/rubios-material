@@ -2,7 +2,10 @@ export const headerStyle = {
     wrapper: {
         width: "100%",
         display: "flex",
-        flexDirection: "row",
+        flexDirection: {
+            xs: "column",
+            md: "row"
+        },
         justifyContent: "space-between",
         position:"static",
         backgroundColor: "#FFF",
@@ -11,12 +14,15 @@ export const headerStyle = {
     },
     navigation: {
         display: "flex",
-        flexDirection: "row",
+        flexDirection: {
+            xs: "column",
+            md: "row"
+        },
         justifyContent: "center",
         alignItems: "center",
         height: "100%",
         padding: "0",
-        margin:"0"
+        margin:"0",
     },
     navitems: {
         textTransform: "uppercase",
