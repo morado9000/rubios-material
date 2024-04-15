@@ -3,6 +3,7 @@ export const letterStyles = {
         pt: "100px",
         pb: "100px",
         backgroundColor: "#fff1e0",
+        width:"100%"
     },
     gridBox: {
         backgroundColor: "white",

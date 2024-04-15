@@ -32,16 +32,10 @@ const CurrentMenu = () => {
       mt="300px">
       <Grid item container justifyContent="flex-start"  width={{xs: "300px", md: "1172px"}}>
         <Tabs value={value} onChange={handleChange} variant='scrollable' scrollButtons="auto" aria-label="basic tabs example">
-            {items.map((item, index) => (
-                <Tab label={item.title} id={`simple-tab-${index}`} aria-controls={`simple-tabpabel-${index}`} />
-            ))}
+          {items.map((item, index) => (
+              <Tab label={item.title} id={`simple-tab-${index}`} aria-controls={`simple-tabpabel-${index}`} />
+          ))}
         </Tabs>
-        {/*{items.map((item) => (
-            <Grid item>
-            <Button sx={item.title == currMenu.title ? {fontSize: "20px", textDecoration: "underline", fontWeight: "1000"} : {fontSize: "20px", fontWeight: "1000"}}
-                    onClick={() => onMenuChange(item)}>{item.title}</Button>
-            </Grid>
-        ))}*/}
       </Grid>
       <Grid item sx={menuStyles.menuCarasoul}>
         {items[value].items.map((item) => (
@@ -51,7 +45,7 @@ const CurrentMenu = () => {
           description={item.description} />
         ))}
       </Grid>
-    </Grid>    
+    </Grid>
   )
 }
 
