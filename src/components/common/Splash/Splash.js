@@ -16,7 +16,6 @@ const Splash = () => {
             direction={{xs: "column", md: "row"}}
             justifyContent={{xs: "center", md: "space-between"}}    
             alignItems="center"
-            mt="50px"
             >
             <Grid item xs>
                     {isExtraSmallSize ? (
