@@ -7,7 +7,6 @@ export const headerStyle = {
             md: "row"
         },
         justifyContent: "space-between",
-        position:"static",
         backgroundColor: "#FFF",
         color: "#196db6",
         height: "50px",
