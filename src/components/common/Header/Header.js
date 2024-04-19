@@ -31,7 +31,7 @@ export default function Header({ logo, midLinks, midEndLinks, button}) {
     const MobileBar = () => {
         return (
             <>
-                <AppBar position="static" sx={{display: {md: "none"}}}>
+                <AppBar sx={{display: {md: "none"}, zIndex: 1501}}>
                     <Toolbar disableGutters sx={headerStyle.wrapper}>
                         <Box sx={{ flexGrow: 1, display: "flex", flexDirection: "column", width:"100%" }}>
                             <Box sx={{display: "flex", flexDirection: "row", justifyContent: "space-around"}}>
@@ -47,10 +47,39 @@ export default function Header({ logo, midLinks, midEndLinks, button}) {
                                     size="large"
                                     edge="start"
                                     color="inherit"
-                                    aria-label="menu"
                                 >
                                     <MenuIcon />
-                                </IconButton>   
+                                </IconButton>
+                                <Menu
+                                    id="fade-menu"
+                                    aria-labelledby='fade-button'
+                                    anchorEl={anchorEl}
+                                    open={open}
+                                    onClose={handleClose}
+                                    TransitionComponent={Fade}
+                                    marginThreshold={0}
+                                    disableScrollLock={true}
+                                    anchorReference="anchorPosition"
+                                    anchorPosition={{ top: 50, left: 0 }}
+                                    slotProps={{
+                                        paper: {
+                                        sx: {
+                                            width: '100%',
+                                            maxWidth: '100%',
+
+                                        },
+                                        }
+                                    }}
+                                    sx={{
+                                        zIndex: 1501
+                                    }}
+                                >
+                                {midLinks.map((link) => (
+                                    <MenuItem sx={{fontSize: "30px", fontWeight: 1000}}>
+                                        {link}
+                                    </MenuItem>
+                                ))}
+                            </Menu>   
                             </Box>
                             {/*<Box sx={{ 
                                 display: "flex", 
@@ -66,39 +95,7 @@ export default function Header({ logo, midLinks, midEndLinks, button}) {
                                 ))}
                                 </Box>*/}
 
-                            <Menu
-                                id="fade-menu"
-                                aria-labelledby='fade-button'
-                                anchorEl={anchorEl}
-                                open={open}
-                                onClose={handleClose}
-                                TransitionComponent={Fade}
-                                marginThreshold={0}
-                                disableScrollLock={true}
-                                anchorOrigin={{
-                                    vertical: 'bottom',
-                                    horizontal: 'left',
-                                }}
-                                transformOrigin={{
-                                    vertical: 'top',
-                                    horizontal: 'left',
-                                }}
-                                slotProps={{
-                                    paper: {
-                                      sx: {
-                                        width: '100%',
-                                        maxWidth: '100%',
-
-                                      },
-                                    }
-                                }}
-                            >
-                                {midLinks.map((link) => (
-                                    <MenuItem sx={{fontSize: "20px", fontWeight: 1000}}>
-                                        {link}
-                                    </MenuItem>
-                                ))}
-                            </Menu>
+                            
                         </Box>
                     </Toolbar>
                 </AppBar>
@@ -108,7 +105,7 @@ export default function Header({ logo, midLinks, midEndLinks, button}) {
     const DesktopBar = () => {
         return (
             <>
-                <AppBar sx={{zIndex:3000}} sx={{display: {xs: "none", md: "inline"}}}>
+                <AppBar sx={{zIndex:3000, display: {xs: "none", md: "inline"}}}>
                     <Toolbar disableGutters sx={headerStyle.wrapper}>
                         <Box sx={{paddingLeft: { xs: "5%", md: "10%"}}}>
                             <img src={logo} alt="" />

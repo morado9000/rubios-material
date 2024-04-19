@@ -6,6 +6,7 @@ export const headerStyle = {
             xs: "column",
             md: "row"
         },
+        position:"static",
         justifyContent: "space-between",
         backgroundColor: "#FFF",
         color: "#196db6",
