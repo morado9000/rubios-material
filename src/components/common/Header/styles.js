@@ -1,16 +1,19 @@
 export const headerStyle = {
+    toolBarStyle: {
+        width: "100%",
+        position:"static",
+        backgroundColor: "#FFF",
+        color: "#196db6",
+        height: {md: "50px"},
+    },
     wrapper: {
         width: "100%",
-        display: "flex",
         flexDirection: {
             xs: "column",
             md: "row"
         },
-        position:"static",
         justifyContent: "space-between",
-        backgroundColor: "#FFF",
-        color: "#196db6",
-        height: "50px",
+        alignItems: {md: "center"},
     },
     navigation: {
         display: "flex",

@@ -14,7 +14,7 @@ const Splash = () => {
         <Grid 
             container
             direction={{xs: "column", md: "row"}}
-            justifyContent={{xs: "center", md: "space-between"}}    
+            justifyContent={{xs: "center", md: "space-between"}}
             alignItems="center"
             >
             <Grid item xs>
