@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/rubios-material/static/css/main.9499097c.css",
+    "main.js": "/rubios-material/static/js/main.544f45f2.js",
+    "static/js/787.045d2da7.chunk.js": "/rubios-material/static/js/787.045d2da7.chunk.js",
+    "static/media/libre-franklin-latin-400-normal.woff": "/rubios-material/static/media/libre-franklin-latin-400-normal.e086efe3f7dbbb2d3070.woff",
+    "static/media/libre-franklin-latin-ext-400-normal.woff": "/rubios-material/static/media/libre-franklin-latin-ext-400-normal.fc0e52b03ed4d79d38b3.woff",
+    "static/media/libre-franklin-latin-400-normal.woff2": "/rubios-material/static/media/libre-franklin-latin-400-normal.3721d6d1acdba9265436.woff2",
+    "static/media/libre-franklin-latin-ext-400-normal.woff2": "/rubios-material/static/media/libre-franklin-latin-ext-400-normal.36aa00e4a6ce0538f58f.woff2",
+    "static/media/libre-franklin-vietnamese-400-normal.woff": "/rubios-material/static/media/libre-franklin-vietnamese-400-normal.3c7e6a1d56a45de990d9.woff",
+    "static/media/libre-franklin-vietnamese-400-normal.woff2": "/rubios-material/static/media/libre-franklin-vietnamese-400-normal.014a44062c210491f21b.woff2",
+    "index.html": "/rubios-material/index.html",
+    "main.9499097c.css.map": "/rubios-material/static/css/main.9499097c.css.map",
+    "main.544f45f2.js.map": "/rubios-material/static/js/main.544f45f2.js.map",
+    "787.045d2da7.chunk.js.map": "/rubios-material/static/js/787.045d2da7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9499097c.css",
+    "static/js/main.544f45f2.js"
+  ]
+}
