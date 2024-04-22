@@ -91,22 +91,7 @@ export default function Header({ logo, midLinks, midEndLinks, button}) {
                                 Order Now
                             </Link>
                         </Box>
-                    </Box>
-                    {/*<Box sx={{ 
-                        display: "flex", 
-                        flexDirection: "column", 
-                        justifyContent: "center", 
-                        alignItems: "flex-start", 
-                        backgroundColor: "white", 
-                        color: "#196db6"}}>
-                        {midLinks.map((link) => (
-                        <Button sx={{fontSize: "20px", fontWeight: 1000}}>
-                            {link}
-                        </Button>
-                        ))}
-                        </Box>*/}
-
-                    
+                    </Box>                  
                 </Box>
             </>
         )
@@ -114,7 +99,7 @@ export default function Header({ logo, midLinks, midEndLinks, button}) {
     const DesktopBar = () => {
         return (
             <>
-                <Box sx={{display: {xs: "none", md: "flex"}, ...headerStyle.wrapper, height: "50px"}}>
+                <Box sx={{display: {xs: "none", md: "flex"}, ...headerStyle.wrapper}}>
                     <Box sx={{paddingLeft: "10%"}}>
                         <img src={logo} alt="" style={{display:"block"}} />
                     </Box>       
@@ -128,7 +113,7 @@ export default function Header({ logo, midLinks, midEndLinks, button}) {
                         ) : (<></>)}
                     </Box>
                     <Box sx={{...headerStyle.navigation}}>
-                        {midLinks ? (
+                        {midEndLinks ? (
                         <>
                         {midEndLinks.slice(0,midEndLinks.length-1).map((link) => (
                                 <Typography variant="bold" component="div" sx={headerStyle.navborder}>

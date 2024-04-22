@@ -4,7 +4,6 @@ export const headerStyle = {
         position:"static",
         backgroundColor: "#FFF",
         color: "#196db6",
-        height: {md: "50px"},
     },
     wrapper: {
         width: "100%",
@@ -23,7 +22,6 @@ export const headerStyle = {
         },
         justifyContent: "center",
         alignItems: "center",
-        height: "100%",
         padding: "0",
         margin:"0",
     },
@@ -39,19 +37,20 @@ export const headerStyle = {
         borderWidth: "0px 1px 0px 0px"
     },
     buttonBox: {
+        alignSelf: 'stretch',
         display: "flex",
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#196db6",
         color: "#FFF",
-        height: "100%",
+        height: "64px",
         pl: 2,
         pr: 2
     },
     buttonItem:  {
         textTransform: "uppercase",
-        textAlign: "center"
+        textAlign: "center",
 
     }
 }
